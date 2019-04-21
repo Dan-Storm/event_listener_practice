@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,49 @@
     <title>Listen Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div>
-<!--Enter text to be displayed in the article boxes below-->        
-        <input id="message">Enter Some Text:</input>
+    <!--Practice exercise 1 "keyup" event listener-->
+    <div id="messageDiv">
+        <h1 class="flashIt">Write Something</h1>
+        <!--Enter text to be displayed in the article boxes below-->
+        <input id="message"></input>
     </div>
     <div id="articleBox">
-<!--Display the text entered in the input box above-->           
-            <aritlce id="output1"></aritlce>
-            <article id="output2"></article>  
+        <!--Display the text entered in the input box above-->
+        <aritlce id="output1"></aritlce>
+        <article id="output2"></article>
     </div>
-    <script src="script.js"></script>
+    <br>
+    <!--Practice exercise 2 "Scrolling" event listener-->
+    <article id="container">
+        <section id="audrey">Feed me, Seymour</section>
+    </article>
+    <br>
+    <!--Practice exercise 3 "Modifying DOM elements broadcast by the browser-->
+    <article id="powerList">
+        <section id="flight" class="power disabled">
+            Flight
+        </section>
+        <section id="mindreading" class="power disabled">
+            Mind Reading
+        </section>
+        <section id="xray" class="power disabled">
+            X-ray Vision
+        </section>
+    </article>
+
+    <button id="activate-flight">Activate Flight</button>
+    <button id="activate-mindreading">Activate Mind Reading</button>
+    <button id="activate-xray">Active X-ray Vision</button>
+
+    <button id="activate-all">Active All Powers</button>
+    <button id="deactivate-all">Deactive All Powers</button>
+
+
+    <script src="JS/powers.js"></script>
+
+    <script src="JS/script.js"></script>
 </body>
+
 </html>
